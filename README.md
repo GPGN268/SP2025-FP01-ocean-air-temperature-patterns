@@ -1,7 +1,7 @@
 # SP2025-FP01-ocean-waves
 Final projects repo for the ocean wave/current vs rising global temps analysis
 
-## Group memebers:
+## Group members:
 - Molly Bilhartz
 - Chandler Bergstrom
 
@@ -12,7 +12,7 @@ Final projects repo for the ocean wave/current vs rising global temps analysis
 We want to learn more about how ocean currents form and change and how different water temperatures can affect these currents/waves in different parts of the globe. Possibly contrast the wave patterns of currents near the equator vs those at the poles. Maybe add on how the currents have changed over the years with an increase in average global temperatures.
 
 ## Background Information:
-motivation
+Within this project, we will focus on oceanic surface fluid flow, specifically wave patterns off the coast of Honolulu, Hawaii. We will use characteristics such as velocity, wave height, surface water temp, and high/low tide measurements. Wave patterns have been changing over time due to climate change, and we want to be able to graph the data and compare the graphs from each year. From there, we want to predict future patterns and potential changes. 
 
 ## Problem Statement:
 What are the wave pattern trends over the years and can we predict future wave patterns with data available?
