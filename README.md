@@ -5,13 +5,17 @@ Final projects repo for the ocean wave/current vs rising global temps analysis
 - Molly Bilhartz
 - Chandler Bergstrom
 
+- coastal waves, north shore honolulu oahu\
+- velocity, wave height, surface water temp, high tide/low tide
+
 ## Project Summary:
 We want to learn more about how ocean currents form and change and how different water temperatures can affect these currents/waves in different parts of the globe. Possibly contrast the wave patterns of currents near the equator vs those at the poles. Maybe add on how the currents have changed over the years with an increase in average global temperatures.
 
 ## Background Information:
+motivation
 
-## Problem Statment:
-How are ocean currents at the poles and equator affected by changes in global temperatures? What are the wave pattern trends over the years and can we predict future wave patterns with data available?
+## Problem Statement:
+What are the wave pattern trends over the years and can we predict future wave patterns with data available?
 ^^We need to pick/narrow down to one question.
 
 ## Data Sets:
@@ -39,6 +43,7 @@ How are ocean currents at the poles and equator affected by changes in global te
 - We plan to start by pulling air and ocean surface temperature data from public data sites like NOAA, NASA, USGS that we can analyse. 
 
 ## Expected results:
+we expect there is going to be clear changes in the variables that we used, velocity, wave height, high tide/low tide, air temp, water surface temp, changes, we thinks its gonna change, wave oatterns are going to be be affected by global warming in the trends from years 2000-2020. (find data then change)
 
 - References:
 
