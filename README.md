@@ -29,6 +29,9 @@ USGS High Wave: https://data.usgs.gov/datacatalog/data/USGS:3a45056a-75c0-4275-9
 - Nasa's Earthdata: surface currents 1993-2025, 
 - https://podaac.jpl.nasa.gov/dataset/OSCAR_L4_OC_NRT_V2.0
 
+![image](https://github.com/user-attachments/assets/6069a871-72bd-4dd4-ac08-acb5cf29bb62)
+
+
 ### Types of Data being collected:
 - Global air temperatures
 - Oahu air temperatures
@@ -96,3 +99,41 @@ Several challenges may arise in the course of this project:
 - **Data integration**: Merging datasets from different sources may provide issues with formatting, time alignment, variable definitions & dimensioning the sets.
 - **Seasonal vs long-term variability**: Distinguishing between short-term variability and long-term trends in our datasets will require very careful indexing during analysis.
 - **Causation vs correlation**: Identifying a clear link between rising temperatures and wave changes may be difficult, maybe even impossible, especially when influenced by multiple interacting factors.
+
+
+**Code for the graph of station location sites**
+import pandas as pd
+import matplotlib.pyplot as plt
+import cartopy.crs as ccrs
+import cartopy.feature as cfeature
+
+path_ds = '../../../../Downloads/30_-160_20_-150.csv'
+df = pd.read_csv(path_ds)
+df.set_index('STATION', inplace= True)
+
+# Drop rows with missing latitude or longitude
+df = df.dropna(subset=['LATITUDE', 'LONGITUDE'])
+
+fig = plt.figure(figsize=(12, 8))
+ax = plt.axes(projection=ccrs.PlateCarree())
+
+ax.add_feature(cfeature.COASTLINE)
+ax.add_feature(cfeature.BORDERS, linestyle=':')
+ax.add_feature(cfeature.LAND, edgecolor='black')
+ax.add_feature(cfeature.OCEAN)
+ax.add_feature(cfeature.LAKES, alpha=0.5)
+ax.add_feature(cfeature.RIVERS)
+
+# Optionally zoom into your region (e.g., Hawaii)
+#ax.set_extent([-160, -150, 18, 32], crs=ccrs.PlateCarree())
+ax.set_extent([-161, -149, 18, 32], crs=ccrs.PlateCarree())
+
+
+ax.scatter(df['LONGITUDE'], df['LATITUDE'],
+           color='red', s=10, edgecolor='k',
+           transform=ccrs.PlateCarree(),
+           label='Station Location - December 2005')
+
+plt.title("Station Locations from Dataset- Hawaii USA", fontsize=15)
+plt.legend()
+plt.show()
