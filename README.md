@@ -2,7 +2,7 @@
 # Final Project README - Could Global Warming be disrupting our Ocean Waves and Currents?
 
 **Group members:** Chandler Bergstrom, Molly Bilhartz
-**Date:** Molly Bilhartz
+**Date:** April 8th, 2025
 
 ## Project Summary:
 We want to learn more about how ocean currents form and change and how different water temperatures can affect these currents/waves in different parts of the globe, but our project will focus on the area of Oahu, Hawaii. We'd like to see how ocean wave patterns have changed over the years and if increasing global temperatures have a measureable affect on these waves.
