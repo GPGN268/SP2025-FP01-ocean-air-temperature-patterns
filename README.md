@@ -45,31 +45,29 @@ USGS High Wave: https://data.usgs.gov/datacatalog/data/USGS:3a45056a-75c0-4275-9
 - Cartopy `cartopy`: a library for cartographic projections and mapping, good for visualizing geographical data like ocean currents or wave pattern
 
 ### How we will approach the problem:
-**Study Design and Methodology**
 
-1. **Objective**  
-   The primary goal of this study is to investigate whether long-term increases in air and ocean surface temperatures are associated with changes in ocean wave heights in Oahu, Hawaii. Specifically, we aim to determine whether wave heights during peak seasonal months (summer (May, June, July, August) and winter (November, December, January, February)) have increased over a 20 year period. We aim to be able to pin point whether or not wave height trends correlate with warming trends in the atmosphere and ocean.
+**Objective**  
+The primary goal of this study is to investigate whether long-term increases in air and ocean surface temperatures are associated with changes in ocean wave heights in Oahu, Hawaii. Specifically, we aim to determine whether wave heights during peak seasonal months (summer (May, June, July, August) and winter (November, December, January, February)) have increased over a 20 year period. We aim to be able to pin point whether or not wave height trends correlate with warming trends in the atmosphere and ocean.
 
-2. **Data Collection**  
-   a) **Temperature Data**  
-   Surface air temperature and sea surface temperature data from years 2005-2025 will be pulled from publicly accessible sources such as the **National Oceanic and Atmospheric Administration (NOAA)**, the **National Aeronautics and Space Administration (NASA)**, the **U.S. Geological Survey (USGS)**, the **Argo Global Data Assembly Centers (GDACs)**, and **Scripps Instituiton of Oceanography**. Where possible, we will prioritize datasets that offer high temporal resolution and spatial relevance to the Hawaiian Islands, specifically Oahu, Hawaii.
+**Data Collection**  
+- Temperature Data:
+Surface air temperature and sea surface temperature data from years 2005-2025 will be pulled from publicly accessible sources such as the **National Oceanic and Atmospheric Administration (NOAA)**, the **National Aeronautics and Space Administration (NASA)**, the **U.S. Geological Survey (USGS)**, the **Argo Global Data Assembly Centers (GDACs)**, and **Scripps Instituiton of Oceanography**.
    
-   b) **Wave Height Data**  
-   Next, we will acquire historical wave data specific to **Oahu**, focusing on **significant wave height**, a standard metric representing the average height of the highest one-third of waves observed over a given period. Data will be sourced from NOAA's **National Data Buoy Center (NDBC)**. 
+- Wave Height Data
+Next, we will collect wave data specific to **Oahu**, focusing on **significant wave height**, a standard metric representing the average height of the highest 1/3 of waves observed over a given period. Data will be pulled from NOAA's **National Data Buoy Center (NDBC)**. 
 
-3. **Time Period and Seasonal Focus**  
-   To assess seasonal patterns, we will isolate data from the **peak summer months (May–August)** and **peak winter months (November–February)** for each year from 2005-2025. This will allow us to compare long-term trends across both **high-wave seasons** (typically winter) and **low-wave seasons** (typically summer).
-
-4. **Data Processing**  
+**Time Period and Seasonal Focus**  
+   To isolate seasonal patterns, we will use data from the peak summer months (May–August) and peak winter months (November–February) for each year from 2005-2025. This will allow us to compare long term trends across both high-wave seasons (winter) & low-wave seasons (summer).
+   
+**Data Processing**  
    All datasets will be processed using **Python** tools to complete the following:
    - Remove missing or negate unneccessary values including unneeded months
-   - Aligning seasonal average
-   - Standardizing units across all datasets for flow in analysis
-   - Align wave and temperature data as closely as possible to Oahu
-   - Ensure data sets are in the same demensions or merge the data sets using
+   - Align seasonal averages
+   - Standardizing units across all datasets
+   - Align wave and temperature data as close as possible to Oahu 
+   - Ensure all data sets are in the same demensions or merge the data sets using xarray tricks
 
-
-5. **Statistical Analysis**
+**Statistical Analysis**
     Structure the data for analysis
    - Isolate long-term trends in air temperature, sea surface temperature, and wave height
    - Analysis visually and mathematically to assess a possible correlation/causation relationship between temperature variables and wave heights in both winter/summer seasons
@@ -79,9 +77,9 @@ USGS High Wave: https://data.usgs.gov/datacatalog/data/USGS:3a45056a-75c0-4275-9
 **Hypothesis**  
 Based on our current understanding of ocean-atmosphere interactions, we hypothesize that **rising ocean and air temperatures associated with global climate change are contributing to increased wave energy in Oahu**, particularly during the summer months when sea surface temperatures are highest. We expect to be able to find evidence that these thermal changes have influenced wave-generating wind patterns and overall ocean dynamics forming larger than 'normal' waves.
 
-Specifically, we expect to find:
-- An **upward trend** in average wave height during summer months between 2005 and 2025
-- An **increased seasonal wave amplitude**, potentially reducing the gap between summer and winter wave heights  
+We expect to find:
+- An upward trend in average wave height during summer months between 2005 and 2025
+- An increased seasonal wave amplitude
 - A possible correlation between higher air/sea surface temperatures and increased wave velocity or intensity
 
 **Expected Results**  
@@ -92,18 +90,9 @@ We expect to observe significant changes in the following variables:
 - Air temperature
 - Sea surface temperature
 
-**Expected Significance**  
-Understanding the relationship between warming trends and ocean wave behavior is critical for:
-- Coastal erosion modeling and shoreline management
-- Infrastructure planning in vulnerable coastal communities
-- Surf tourism and recreational safety
-- Contributing to broader climate impact assessments in the Pacific region
-
 **Anticipated Challenges**  
 Several challenges may arise in the course of this project:
 - **Data availability and resolution**: Long-term and continuous datasets with adequate temporal and spatial resolution may not be available for all the variables we need and/or difficult to find.
-- **Data integration**: Merging datasets from different sources may present issues with formatting, time alignment, and variable definitions and dimensioning.
-- **Seasonal vs long-term variability**: Distinguishing between short-term variability and long-term trends in our datasets will require very careful indexing in the time-series analysis.
+- **Data integration**: Merging datasets from different sources may provide issues with formatting, time alignment, variable definitions & dimensioning the sets.
+- **Seasonal vs long-term variability**: Distinguishing between short-term variability and long-term trends in our datasets will require very careful indexing during analysis.
 - **Causation vs correlation**: Identifying a clear link between rising temperatures and wave changes may be difficult, maybe even impossible, especially when influenced by multiple interacting factors.
-
-
