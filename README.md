@@ -111,7 +111,7 @@ path_ds = '../../../../Downloads/30_-160_20_-150.csv'
 df = pd.read_csv(path_ds)
 df.set_index('STATION', inplace= True)
 
-# Drop rows with missing latitude or longitude
+#Drop rows with missing latitude or longitude
 df = df.dropna(subset=['LATITUDE', 'LONGITUDE'])
 
 fig = plt.figure(figsize=(12, 8))
@@ -124,7 +124,6 @@ ax.add_feature(cfeature.OCEAN)
 ax.add_feature(cfeature.LAKES, alpha=0.5)
 ax.add_feature(cfeature.RIVERS)
 
-# Optionally zoom into your region (e.g., Hawaii)
 #ax.set_extent([-160, -150, 18, 32], crs=ccrs.PlateCarree())
 ax.set_extent([-161, -149, 18, 32], crs=ccrs.PlateCarree())
 
