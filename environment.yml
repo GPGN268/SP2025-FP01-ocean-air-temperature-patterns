@@ -1,0 +1,11 @@
+name: gpgn268
+channels:
+- conda-forge
+dependencies:
+- python=3.12
+- pandas
+- matplotlib
+- jupyterlab
+- cartopy
+- numpy
+- xarray
