@@ -1,4 +1,4 @@
-# SP2025-FP01-ocean-waves
+# SP2025-FP01-Ocean-Air-Temperature
 # Final Project README - Could Global Warming be disrupting our Ocean Waves and Currents?
 
 **Group members:** Chandler Bergstrom (cgbergstrom), Molly Bilhartz (mhbilhartz)
