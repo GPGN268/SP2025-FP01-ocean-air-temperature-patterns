@@ -5,13 +5,21 @@
 **Date:** April 8th, 2025
 
 ## Project Summary:
-We want to learn more about how ocean currents form and change and how different water temperatures can affect these currents/waves in different parts of the globe, but our project will focus on the area of Oahu, Hawaii. We'd like to see how ocean wave patterns have changed over the years and if increasing global temperatures have a measureable affect on these waves.
+We want to learn more about how ocean currents form and change and how different water temperatures can affect these currents/waves in different parts of the globe, but our project will focus on the area of Oahu, Hawaii. We want to focus on how the variables of wave and air temperature are correlated. Air and water temperatures showed consistent seasonal cycles across all years. We used Jupyter Lab coding to graph water and air temperatures across the years of 206-2024. We visualize, compare, and interpret temperature trends from 2016 to 2024 using time-series, anomaly plots, correlation analyses, and heatmaps.
 
 ## Background Information:
 Within this project, we will focus on oceanic surface fluid flow, specifically wave patterns off the coast of Honolulu, Hawaii. We will use characteristics such as velocity, wave height, surface water temp, and high/low tide measurements. Wave patterns have been changing over time due to climate change, and we want to be able to graph the data and compare the graphs from each year. From there, we want to predict future patterns and potential changes. 
 
 ## Problem Statement:
 What are the significant long-term trends in ocean wave characteristics, such as wave height, period, and direction, over the last two decades off the shores of Oahu? Are there observable patterns that can be used to predict futire trends?
+
+## To Use This Repository:
+1) Clone or download the project files.
+2) Place raw .txt buoy data files inside the /data directory.
+3) Run the Jupyter notebooks step by step:
+- data_cleaning.ipynb
+- multi_year_visuals.ipynb
+- anomaly_analysis.ipynb
 
 ## Data Sets:
 - NOAA, specifically their World Ocean Database (WOD)
@@ -100,6 +108,10 @@ Several challenges may arise in the course of this project:
 - **Seasonal vs long-term variability**: Distinguishing between short-term variability and long-term trends in our datasets will require very careful indexing during analysis.
 - **Causation vs correlation**: Identifying a clear link between rising temperatures and wave changes may be difficult, maybe even impossible, especially when influenced by multiple interacting factors.
 
+**Contribution**
+Name | Role
+Chandler Bergstrom | Multi-year graphing, data cleaning, heatmap & anomaly development, presentation slides, README updates, Jupyter Lab notebook, and standard deviation and mean graphs
+Molly Bilhartz | Gathered Data, README/report formatting
 
 **Code for the graph of station location sites**
 import pandas as pd
