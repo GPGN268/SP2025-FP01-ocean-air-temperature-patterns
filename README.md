@@ -1,7 +1,7 @@
 # SP2025-FP01-ocean-waves
 # Final Project README - Could Global Warming be disrupting our Ocean Waves and Currents?
 
-**Group members:** Chandler Bergstrom (cgbergstrom), Molly Bilhartz
+**Group members:** Chandler Bergstrom (cgbergstrom), Molly Bilhartz (mhbilhartz)
 **Date:** April 8th, 2025
 
 ## Project Summary:
@@ -11,7 +11,7 @@ We want to learn more about how ocean currents form and change and how different
 Within this project, we will focus on oceanic surface fluid flow, specifically wave patterns off the coast of Honolulu, Hawaii. We will use characteristics such as velocity, wave height, surface water temp, and high/low tide measurements. Wave patterns have been changing over time due to climate change, and we want to be able to graph the data and compare the graphs from each year. From there, we want to predict future patterns and potential changes. 
 
 ## Problem Statement:
-How do ocean and wave temperatures correlate near certain buoy loactions? What anomalies exist, and how do they correlate with climate events such as El Niño?
+How do ocean and wave temperatures correlate near certain buoy locations? What anomalies exist, and how do they correlate with climate events such as El Niño?
 
 ## To Use This Repository:
 1) Clone or download the project files.
