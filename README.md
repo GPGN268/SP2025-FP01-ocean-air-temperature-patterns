@@ -1,11 +1,11 @@
 # SP2025-FP01-Ocean-Air-Temperature
-# Final Project README - Could Global Warming be disrupting our Ocean Waves and Currents?
+# Final Project README - Air and surface Ocean temperature correlation patterns
 
 **Group members:** Chandler Bergstrom (cgbergstrom), Molly Bilhartz (mhbilhartz)
-**Date:** April 8th, 2025
+**Date:** April 24th, 2025
 
 ## Project Summary:
-We want to learn more about how ocean currents form and change and how different water temperatures can affect these currents/waves in different parts of the globe, but our project will focus on the area of Oahu, Hawaii. We want to focus on how the variables of wave and air temperature are correlated. Air and water temperatures showed consistent seasonal cycles across all years. We used Jupyter Lab coding to graph water and air temperatures across the years of 206-2024. We visualize, compare, and interpret temperature trends from 2016 to 2024 using time-series, anomaly plots, correlation analyses, and heatmaps.
+We want to learn more about how the air can impact the surface of the ocean and see if the tempurature of one correlates or affects the otehr at all. Our focus area for this project will focus on the area of Oahu, Hawaii. We want to focus on how the variables of ocean and air temperature are correlated. Air and water temperatures showed consistent seasonal cycles across all years. We used Jupyter Lab coding to graph water and air temperatures across the years of 206-2024. We visualize, compare, and interpret temperature trends from 2016 to 2024 using time-series, anomaly plots, correlation analyses, and heatmaps.
 
 ## Background Information:
 Within this project, we will focus on oceanic surface fluid flow, specifically wave patterns off the coast of Honolulu, Hawaii. We will use characteristics such as velocity, wave height, surface water temp, and high/low tide measurements. Wave patterns have been changing over time due to climate change, and we want to be able to graph the data and compare the graphs from each year. From there, we want to predict future patterns and potential changes. 
@@ -36,7 +36,12 @@ USGS High Wave: https://data.usgs.gov/datacatalog/data/USGS:3a45056a-75c0-4275-9
 
 - Nasa's Earthdata: surface currents 1993-2025, 
 - https://podaac.jpl.nasa.gov/dataset/OSCAR_L4_OC_NRT_V2.0
+- *Did not use*
 
+https://www.seanoe.org/data/00412/52367/
+https://www.ndbc.noaa.gov/station_page.php?station=51210
+https://www.ndbc.noaa.gov/station_history.php?station=51210
+https://www.ndbc.noaa.gov/obs.shtml
 ![image](https://github.com/user-attachments/assets/6069a871-72bd-4dd4-ac08-acb5cf29bb62)
 
 
