@@ -1,7 +1,7 @@
 # SP2025-FP01-ocean-waves
 # Final Project README - Could Global Warming be disrupting our Ocean Waves and Currents?
 
-**Group members:** Chandler Bergstrom, Molly Bilhartz
+**Group members:** Chandler Bergstrom (cgbergstrom), Molly Bilhartz
 **Date:** April 8th, 2025
 
 ## Project Summary:
@@ -11,7 +11,7 @@ We want to learn more about how ocean currents form and change and how different
 Within this project, we will focus on oceanic surface fluid flow, specifically wave patterns off the coast of Honolulu, Hawaii. We will use characteristics such as velocity, wave height, surface water temp, and high/low tide measurements. Wave patterns have been changing over time due to climate change, and we want to be able to graph the data and compare the graphs from each year. From there, we want to predict future patterns and potential changes. 
 
 ## Problem Statement:
-What are the significant long-term trends in ocean wave characteristics, such as wave height, period, and direction, over the last two decades off the shores of Oahu? Are there observable patterns that can be used to predict futire trends?
+How do ocean and wave temperatures correlate near certain buoy loactions? What anomalies exist, and how do they correlate with climate events such as El Niño?
 
 ## To Use This Repository:
 1) Clone or download the project files.
@@ -41,24 +41,31 @@ USGS High Wave: https://data.usgs.gov/datacatalog/data/USGS:3a45056a-75c0-4275-9
 
 
 ### Types of Data being collected:
-- Global air temperatures
 - Oahu air temperatures
 - Ocean surface temperature 
-- Ocean wave velocities
 - Depth measurements of ocean waves
 - Current/wave movement patterns 
   
 ## Tools/packages being used:
-- Pandas `pandas`: library for data manipulation and analysis, especially useful for working with structured data (will use for DataFrames) link: https://www.kaggle.com/code/kashnitsky/topic-1-exploratory-data-analysis-with-pandas
-- Numpy `numpy`: library for numerical computing, designed to handle arrays and matrices, and perform efficient numerical operations link: https://numpy.org/doc/2.2/user/absolute_beginners.html
-- Matplotlib `matplotlib`: plotting library for creating static, interactive, and animated visualizations in Python (used for visual graphs and plots to show data) link: https://matplotlib.org/stable/tutorials/pyplot.html
-- Xarray `xarray`: a library designed for working with multi-dimensional datasets and especially useful for time series data, geospatial data link: https://docs.xarray.dev/en/latest/generated/xarray.DataArray.to_dataframe.html
+- Pandas `pandas`: library for data manipulation and analysis, especially useful for working with structured data (will use for DataFrames) link: pandas.pydata.org
+- Numpy `numpy`: library for numerical computing, designed to handle arrays and matrices, and perform efficient numerical operations link: numpy.org
+- Matplotlib `matplotlib`: plotting library for creating static, interactive, and animated visualizations in Python (used for visual graphs and plots to show data) link: matplotlib.org
+- Xarray `xarray`: a library designed for working with multi-dimensional datasets and especially useful for time series data, geospatial data link: xarray.dev
 - Cartopy `cartopy`: a library for cartographic projections and mapping, good for visualizing geographical data like ocean currents or wave pattern
-
-### How we will approach the problem:
+- Seaborn 'seaborn': a visualization library for statistical graphs link:	seaborn.pydata.org
 
 **Objective**  
-The primary goal of this study is to investigate whether long-term increases in air and ocean surface temperatures are associated with changes in ocean wave heights in Oahu, Hawaii. Specifically, we aim to determine whether wave heights during peak seasonal months (summer (May, June, July, August) and winter (November, December, January, February)) have increased over a 20 year period. We aim to be able to pin point whether or not wave height trends correlate with warming trends in the atmosphere and ocean.
+The primary goal of this study is to investigate whether ocean and air temperatures are correlated in Oahu, Hawaii over the years of 2016-2024. Specifically, we aim to determine whether those characteristics are correlated to anomaly events or if there are certain outliers. We ai, to visualize long-terms patterns in air and sea surface temperatures, create comparitive temperature plots across multiple years, and identify anomalies and relate them to known climte events.
+
+**Project Methodology** 
+- Data Collection: Downloaded multi-year .txt buoy files and Argo profiles.
+- Data Cleaning: Parsed dates, handled missing values (999.0, <NA>), combined years into unified DataFrames.
+- Visualization:
+- Yearly comparison graphs (air vs. water temp)
+- Anomaly detection plots (monthly vs. baseline)
+- Heatmaps showing time vs. temp patterns
+- Depth Integration: Argo gridded data used to examine temperature changes below the surface.
+- Event Overlay: El Niño years highlighted for anomaly correlation.
 
 **Data Collection**  
 - Temperature Data:
@@ -83,23 +90,19 @@ Next, we will collect wave data specific to **Oahu**, focusing on **significant 
    - Isolate long-term trends in air temperature, sea surface temperature, and wave height
    - Analysis visually and mathematically to assess a possible correlation/causation relationship between temperature variables and wave heights in both winter/summer seasons
 
-### Expected results:
-
+## Expected results:
+- Undeniable correlation between air and sea surface temperature
+- Certain years warmer or cooler than others
+- Overall warming trend
+  
 **Hypothesis**  
-Based on our current understanding of ocean-atmosphere interactions, we hypothesize that **rising ocean and air temperatures associated with global climate change are contributing to increased wave energy in Oahu**, particularly during the summer months when sea surface temperatures are highest. We expect to be able to find evidence that these thermal changes have influenced wave-generating wind patterns and overall ocean dynamics forming larger than 'normal' waves.
+Based on our current understanding of ocean-atmosphere interactions, we hypothesize that **sea surface and air temperatures in Oahu are closely related and there will be months or years that are warmer than others that may have to do with climate anomalies**, particularly during the summer months when sea surface temperatures are highest. We expect to be able to find evidence that these thermal changes have influenced wave-generating wind patterns and overall ocean dynamics forming larger than 'normal' waves.
 
-We expect to find:
-- An upward trend in average wave height during summer months between 2005 and 2025
-- An increased seasonal wave amplitude
-- A possible correlation between higher air/sea surface temperatures and increased wave velocity or intensity
-
-**Expected Results**  
-We expect to observe significant changes in the following variables:
-- Wave height
-- Wave velocity
-- High and low tide extremes
-- Air temperature
-- Sea surface temperature
+**Summary of Results:**
+- Air and water temperatures showed consistent seasonal cycles across all years.
+- 2023–2024 had clear temperature anomalies consistent with El Niño effects.
+- Rolling averages and anomaly plots revealed warming trends, particularly in surface waters.
+- Heatmaps and time-depth plots demonstrated thermocline behavior and surface stratification.
 
 **Anticipated Challenges**  
 Several challenges may arise in the course of this project:
