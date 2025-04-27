@@ -8,7 +8,7 @@
 We want to learn more about how the air can impact the surface of the ocean and see if the tempurature of one correlates or affects the otehr at all. Our focus area for this project will focus on the area of Oahu, Hawaii. We want to focus on how the variables of ocean and air temperature are correlated. Air and water temperatures showed consistent seasonal cycles across all years. We used Jupyter Lab coding to graph water and air temperatures across the years of 206-2024. We visualize, compare, and interpret temperature trends from 2016 to 2024 using time-series, anomaly plots, correlation analyses, and heatmaps.
 
 ## Background Information:
-Within this project, we will focus on oceanic surface fluid flow, specifically wave patterns off the coast of Honolulu, Hawaii. We will use characteristics such as velocity, wave height, surface water temp, and high/low tide measurements. Wave patterns have been changing over time due to climate change, and we want to be able to graph the data and compare the graphs from each year. From there, we want to predict future patterns and potential changes. 
+In this project, we focus on surface ocean and atmospheric conditions, particularly how air temperature may influence sea surface temperature near Honolulu, Hawaii. Changes in ocean surface temperature have been increasingly linked to climate variability and global warming. Our goal is to graph multi-year data and identify patterns, seasonal changes, and potential climate event impacts (such as El Niño).
 
 ## Problem Statement:
 How do ocean and wave temperatures correlate near certain buoy locations? What anomalies exist, and how do they correlate with climate events such as El Niño?
@@ -21,29 +21,24 @@ How do ocean and wave temperatures correlate near certain buoy locations? What a
 - multi_year_visuals.ipynb
 - anomaly_analysis.ipynb
 
-## Data Sets:
+## Relevant Data Sets:
 - NOAA, specifically their World Ocean Database (WOD)
   WOD allows us to look through their database by filtering out or in characteristics we want in our data (geographical areas or certain characteristics such as temperature
 NOAA WOD: https://www.ncei.noaa.gov/access/world-ocean-database-select/dbsearch.html
-
-- USGS also has specific data sets for different areas/variables
-  We found one for 'High Wave Hazard Intensity Level in the coastal zone of Sand Island (Oahu), Hawaii'
-USGS High Wave: https://data.usgs.gov/datacatalog/data/USGS:3a45056a-75c0-4275-9b08-598f88b80361
 
 - NOAA Global Marine Observations in 10-degree Bins derived from the International Comprehensive Ocean-Atmosphere Data Set (ICOADS)
   Use maps to narrow down where we want to get data from and what years data is available for
 (ICOADS): https://www.ncei.noaa.gov/access/search/data-search/global-marine?dataTypes=AIR_TEMP&startDate=1990-01-03T00:00:00&endDate=2010-01-03T23:59:59&pageNum=1&pageSize=10
 
-- Nasa's Earthdata: surface currents 1993-2025, 
-- https://podaac.jpl.nasa.gov/dataset/OSCAR_L4_OC_NRT_V2.0
-- *Did not use*
+- SEANOE. (2019). ISAS-15 and ISAS-20 In Situ Analysis of Sea Surface Temperature and Salinity. SEANOE. Retrieved from https://www.seanoe.org/data/00412/52367/
 
-https://www.seanoe.org/data/00412/52367/
-https://www.ndbc.noaa.gov/station_page.php?station=51210
-https://www.ndbc.noaa.gov/station_history.php?station=51210
-https://www.ndbc.noaa.gov/obs.shtml
+- NOAA National Data Buoy Center. (2024). Station 51210 (Waimea Bay, HI) - Station Information. Retrieved from https://www.ndbc.noaa.gov/station_page.php?station=51210
+
+- NOAA National Data Buoy Center. (2024). Station 51210 - Station History. Retrieved from https://www.ndbc.noaa.gov/station_history.php?station=51210
+
+- NOAA National Data Buoy Center. (2024). NDBC Observations - Real-Time Data. Retrieved from https://www.ndbc.noaa.gov/obs.shtml
+- 
 ![image](https://github.com/user-attachments/assets/6069a871-72bd-4dd4-ac08-acb5cf29bb62)
-
 
 ### Types of Data being collected:
 - Oahu air temperatures
@@ -60,7 +55,7 @@ https://www.ndbc.noaa.gov/obs.shtml
 - Seaborn 'seaborn': a visualization library for statistical graphs link:	seaborn.pydata.org
 
 **Objective**  
-The primary goal of this study is to investigate whether ocean and air temperatures are correlated in Oahu, Hawaii over the years of 2016-2024. Specifically, we aim to determine whether those characteristics are correlated to anomaly events or if there are certain outliers. We ai, to visualize long-terms patterns in air and sea surface temperatures, create comparitive temperature plots across multiple years, and identify anomalies and relate them to known climte events.
+The primary goal of this study is to investigate whether ocean and air temperatures are correlated in Oahu, Hawaii over the years of 2016-2024. Specifically, we aim to determine whether those characteristics are correlated to anomaly events or if there are certain outliers. We aim to visualize long-terms patterns in air and sea surface temperatures, create comparitive temperature plots across multiple years, and identify anomalies and relate them to known climte events.
 
 **Project Methodology** 
 - Data Collection: Downloaded multi-year .txt buoy files and Argo profiles.
@@ -75,23 +70,19 @@ The primary goal of this study is to investigate whether ocean and air temperatu
 **Data Collection**  
 - Temperature Data:
 Surface air temperature and sea surface temperature data from years 2005-2025 will be pulled from publicly accessible sources such as the **National Oceanic and Atmospheric Administration (NOAA)**, the **National Aeronautics and Space Administration (NASA)**, the **U.S. Geological Survey (USGS)**, the **Argo Global Data Assembly Centers (GDACs)**, and **Scripps Instituiton of Oceanography**.
-   
-- Wave Height Data
-Next, we will collect wave data specific to **Oahu**, focusing on **significant wave height**, a standard metric representing the average height of the highest 1/3 of waves observed over a given period. Data will be pulled from NOAA's **National Data Buoy Center (NDBC)**. 
 
 **Time Period and Seasonal Focus**  
-   To isolate seasonal patterns, we will use data from the peak summer months (May–August) and peak winter months (November–February) for each year from 2005-2025. This will allow us to compare long term trends across both high-wave seasons (winter) & low-wave seasons (summer).
+   To isolate seasonal patterns, we will analyze data from the peak summer months (May–August) and peak winter months (November–February) for each year from 2005-2025. Our goal is to identify temperature patterns (between the two isolated variables) associated with El Niño events and other climate anomalies.
    
 **Data Processing**  
    All datasets will be processed using **Python** tools to complete the following:
    - Remove missing or negate unneccessary values including unneeded months
    - Align seasonal averages
    - Standardizing units across all datasets
-   - Align wave and temperature data as close as possible to Oahu 
    - Ensure all data sets are in the same demensions or merge the data sets using xarray tricks
 
 **Statistical Analysis**
-    Structure the data for analysis
+   - Structure the data for analysis
    - Isolate long-term trends in air temperature, sea surface temperature, and wave height
    - Analysis visually and mathematically to assess a possible correlation/causation relationship between temperature variables and wave heights in both winter/summer seasons
 
@@ -116,10 +107,9 @@ Several challenges may arise in the course of this project:
 - **Seasonal vs long-term variability**: Distinguishing between short-term variability and long-term trends in our datasets will require very careful indexing during analysis.
 - **Causation vs correlation**: Identifying a clear link between rising temperatures and wave changes may be difficult, maybe even impossible, especially when influenced by multiple interacting factors.
 
-**Contribution**
-Name | Role
+**Contributions**
 Chandler Bergstrom | Multi-year graphing, data cleaning, heatmap & anomaly development, presentation slides, README updates, Jupyter Lab notebook, and standard deviation and mean graphs
-Molly Bilhartz | Gathered Data, README/report formatting
+Molly Bilhartz | Gathered Data, README/report formatting, data cleaning, presentation slides, Jupyter lab notebook, station bouy plot, multi-year water variable graphing, environment.yml file
 
 **Code for the graph of station location sites**
 import pandas as pd
