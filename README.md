@@ -5,13 +5,13 @@
 **Date:** April 24th, 2025
 
 ## Project Summary:
-We want to learn more about how the air can impact the surface of the ocean and see if the tempurature of one correlates or affects the otehr at all. Our focus area for this project will focus on the area of Oahu, Hawaii. We want to focus on how the variables of ocean and air temperature are correlated. Air and water temperatures showed consistent seasonal cycles across all years. We used Jupyter Lab coding to graph water and air temperatures across the years of 206-2024. We visualize, compare, and interpret temperature trends from 2016 to 2024 using time-series, anomaly plots, correlation analyses, and heatmaps.
+We want to learn more about how the air can impact the surface of the ocean and see if the tempurature of one correlates or affects the otehr at all. Our focus area for this project will focus on the area of Oahu, Hawaii. We want to focus on how the variables of ocean and air temperature are correlated. Air and water temperatures showed consistent seasonal cycles across all years. We used Jupyter Lab coding to graph water and air temperatures across the years of 2016-2024. We visualize, compare, and interpret temperature trends from 2016 to 2024 using time-series, anomaly plots, correlation analyses, and heatmaps.
 
 ## Background Information:
 In this project, we focus on surface ocean and atmospheric conditions, particularly how air temperature may influence sea surface temperature near Honolulu, Hawaii. Changes in ocean surface temperature have been increasingly linked to climate variability and global warming. Our goal is to graph multi-year data and identify patterns, seasonal changes, and potential climate event impacts (such as El Niño).
 
 ## Problem Statement:
-How do ocean and wave temperatures correlate near certain buoy locations? What anomalies exist, and how do they correlate with climate events such as El Niño?
+How do ocean and air temperatures correlate near certain buoy locations? What anomalies exist, and how do they correlate with climate events such as El Niño?
 
 ## To Use This Repository:
 1) Clone or download the project files.
@@ -108,7 +108,7 @@ Several challenges may arise in the course of this project:
 - **Causation vs correlation**: Identifying a clear link between rising temperatures and wave changes may be difficult, maybe even impossible, especially when influenced by multiple interacting factors.
 
 **Contributions**
-Chandler Bergstrom | Multi-year graphing, data cleaning, heatmap & anomaly development, presentation slides, README updates, Jupyter Lab notebook, and standard deviation and mean graphs
+Chandler Bergstrom | Multi-year graphing, data cleaning, heatmap & anomaly development, presentation slides, README updates, Jupyter Lab notebook, all water and temperature graphs, and standard deviation and mean graphs,
 Molly Bilhartz | Gathered Data, README/report formatting, data cleaning, presentation slides, Jupyter lab notebook, station bouy plot, multi-year water variable graphing, environment.yml file
 
 **Code for the graph of station location sites**
