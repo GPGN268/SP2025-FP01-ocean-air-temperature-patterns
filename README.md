@@ -43,8 +43,6 @@ NOAA WOD: https://www.ncei.noaa.gov/access/world-ocean-database-select/dbsearch.
 ### Types of Data being collected:
 - Oahu air temperatures
 - Ocean surface temperature 
-- Depth measurements of ocean waves
-- Current/wave movement patterns 
   
 ## Tools/packages being used:
 - Pandas `pandas`: library for data manipulation and analysis, especially useful for working with structured data (will use for DataFrames) link: pandas.pydata.org
@@ -52,7 +50,6 @@ NOAA WOD: https://www.ncei.noaa.gov/access/world-ocean-database-select/dbsearch.
 - Matplotlib `matplotlib`: plotting library for creating static, interactive, and animated visualizations in Python (used for visual graphs and plots to show data) link: matplotlib.org
 - Xarray `xarray`: a library designed for working with multi-dimensional datasets and especially useful for time series data, geospatial data link: xarray.dev
 - Cartopy `cartopy`: a library for cartographic projections and mapping, good for visualizing geographical data like ocean currents or wave pattern
-- Seaborn 'seaborn': a visualization library for statistical graphs link:	seaborn.pydata.org
 
 **Objective**  
 The primary goal of this study is to investigate whether ocean and air temperatures are correlated in Oahu, Hawaii over the years of 2016-2024. Specifically, we aim to determine whether those characteristics are correlated to anomaly events or if there are certain outliers. We aim to visualize long-terms patterns in air and sea surface temperatures, create comparitive temperature plots across multiple years, and identify anomalies and relate them to known climte events.
