@@ -80,8 +80,8 @@ Surface air temperature and sea surface temperature data from years 2005-2025 wi
 
 **Statistical Analysis**
    - Structure the data for analysis
-   - Isolate long-term trends in air temperature, sea surface temperature, and wave height
-   - Analysis visually and mathematically to assess a possible correlation/causation relationship between temperature variables and wave heights in both winter/summer seasons
+   - Isolate long-term trends in air temperature, sea surface temperature
+   - Analysis visually and mathematically to assess a possible correlation/causation relationship between temperature variables 
 
 ## Expected results:
 - Undeniable correlation between air and sea surface temperature
@@ -89,8 +89,7 @@ Surface air temperature and sea surface temperature data from years 2005-2025 wi
 - Overall warming trend
   
 **Hypothesis**  
-Based on our current understanding of ocean-atmosphere interactions, we hypothesize that **sea surface and air temperatures in Oahu are closely related and there will be months or years that are warmer than others that may have to do with climate anomalies**, particularly during the summer months when sea surface temperatures are highest. We expect to be able to find evidence that these thermal changes have influenced wave-generating wind patterns and overall ocean dynamics forming larger than 'normal' waves.
-
+Based on our current understanding of ocean-atmosphere interactions, we hypothesize that **sea surface and air temperatures in Oahu are closely related and there will be months or years that are warmer than others that may have to do with climate anomalies**, particularly during the summer months when sea surface temperatures are highest. 
 **Summary of Results:**
 - Air and water temperatures showed consistent seasonal cycles across all years.
 - 2023–2024 had clear temperature anomalies consistent with El Niño effects.
@@ -102,7 +101,7 @@ Several challenges may arise in the course of this project:
 - **Data availability and resolution**: Long-term and continuous datasets with adequate temporal and spatial resolution may not be available for all the variables we need and/or difficult to find.
 - **Data integration**: Merging datasets from different sources may provide issues with formatting, time alignment, variable definitions & dimensioning the sets.
 - **Seasonal vs long-term variability**: Distinguishing between short-term variability and long-term trends in our datasets will require very careful indexing during analysis.
-- **Causation vs correlation**: Identifying a clear link between rising temperatures and wave changes may be difficult, maybe even impossible, especially when influenced by multiple interacting factors.
+- **Causation vs correlation**: Identifying a clear link between rising temperatures in the air and ocean surface temperature changes may be difficult especially when influenced by multiple interacting factors.
 
 **Contributions**
 Chandler Bergstrom: Multi-year graphing, data cleaning, all graphs and coding for figures 2-8, all air vs water yearly graphs (figure 2), air vs water 8 year span graph (figure 3), average air and water temperature map with standard eviation graph (figure 4), monthly air/water temperature graph with El Nino highlight (figure 5), seasonal water temp with anomaly overlay graph (figure 6), presentation slides, README updates, all El Nino research, all major analysis (including blurbs for figures Jupyter notebook).
