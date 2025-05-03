@@ -105,8 +105,9 @@ Several challenges may arise in the course of this project:
 - **Causation vs correlation**: Identifying a clear link between rising temperatures and wave changes may be difficult, maybe even impossible, especially when influenced by multiple interacting factors.
 
 **Contributions**
-Chandler Bergstrom | Multi-year graphing, data cleaning, heatmap & anomaly development, presentation slides, README updates, Jupyter Lab notebook, all water and temperature graphs, and standard deviation and mean graphs,
-Molly Bilhartz | Gathered Data, README/report formatting, data cleaning, presentation slides, Jupyter lab notebook, station bouy plot, multi-year water variable graphing, environment.yml file
+Chandler Bergstrom: Multi-year graphing, data cleaning, all graphs and coding for figures 2-8, all air vs water yearly graphs (figure 2), air vs water 8 year span graph (figure 3), average air and water temperature map with standard eviation graph (figure 4), monthly air/water temperature graph with El Nino highlight (figure 5), seasonal water temp with anomaly overlay graph (figure 6), presentation slides, README updates, all El Nino research, all major analysis (including blurbs for figures Jupyter notebook).
+
+Molly Bilhartz: Gathered all data, README/report formatting, data cleaning, presentation slides, station bouy plot (figure 1), introductory paragraphs in Jupyter notebook, environment.yml file, Jupyter notebook finalization and check.
 
 **Code for the graph of station location sites**
 import pandas as pd
