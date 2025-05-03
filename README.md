@@ -106,6 +106,7 @@ Several challenges may arise in the course of this project:
 
 **Contributions**
 Chandler Bergstrom: Multi-year graphing, data cleaning, all graphs and coding for figures 2-8, all air vs water yearly graphs (figure 2), air vs water 8 year span graph (figure 3), average air and water temperature map with standard eviation graph (figure 4), monthly air/water temperature graph with El Nino highlight (figure 5), seasonal water temp with anomaly overlay graph (figure 6), presentation slides, README updates, all El Nino research, all major analysis (including blurbs for figures Jupyter notebook).
+
 Molly Bilhartz: Gathered all data, README/report formatting, data cleaning, presentation slides, station bouy plot (figure 1), introductory paragraphs in Jupyter notebook, environment.yml file, Jupyter notebook finalization and check.
 
 **Code for the graph of station location sites**
